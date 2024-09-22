@@ -77,7 +77,3 @@
             <img src={throne} alt="throne" class="w-8 h-8 fill-current" />
         </a>
     </div>
-
-
-<style>
-</style>
