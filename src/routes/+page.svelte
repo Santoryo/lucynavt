@@ -40,8 +40,8 @@
 
     <div class="w-full h-[300px] md:flex flex-row items-center justify-center relative hidden">
         <img src={rippedpaper} alt="ripperpaper" class="h-full object-cover absolute z-10" />
-        <div class="w-[432px] h-[300px] overflow-hidden absolute">
-            <video class="h-full absolute" autoplay loop muted>
+        <div class="w-[432px] h-[300px] overflow-hidden absolute mx-auto left-0 right-0">
+            <video class="h-[290px] absolute w-auto mx-auto left-0 right-0" autoplay loop muted>
                 <source src="{vid}" type="video/webm">
             </video>
         </div>
