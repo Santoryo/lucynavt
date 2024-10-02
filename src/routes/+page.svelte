@@ -40,15 +40,23 @@
     <h2 class="text-lg">silly vtuber, design & coding</h2>
 
     <div class="w-full h-[300px] md:flex flex-row items-center justify-center relative hidden">
+        {#if !stream}
         <img src={rippedpaper} alt="ripperpaper" class="h-full object-cover absolute z-10" />
         <div class="w-[432px] h-[300px] overflow-hidden absolute mx-auto left-0 right-0">
             <video class="h-[290px] absolute w-auto mx-auto left-0 right-0" autoplay loop muted>
                 <source src="{vid}" type="video/webm">
             </video>
         </div>
+        {:else}
+        <iframe src="https://player.twitch.tv/?channel=lucynavt&parent=lucynavt.com" frameborder="0" allowfullscreen="true" scrolling="no" class="w-[432px] h-full"></iframe>
+        {/if}
     </div>
 
+    {#if !stream}
     <img src="{silly}" alt="lucy" class="rounded-md size-full object-center object-cover block md:hidden">
+    {:else}
+    <iframe src="https://player.twitch.tv/?channel=lucynavt&parent=lucynavt.com" frameborder="0" allowfullscreen="true" scrolling="no" class="w-full h-[300px] aspect-video"></iframe> 
+    {/if}
 
     <div class="flex flex-row gap-4 mt-4 items-center justify-center">
     <!-- svelte-ignore a11y_missing_attribute --> 
