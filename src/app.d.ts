@@ -10,4 +10,11 @@ declare global {
 	}
 }
 
+interface User {
+	collectionId: string;
+	collectionName: string;
+	id: string;
+	score: number;
+}
+
 export {};
