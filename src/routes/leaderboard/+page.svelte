@@ -32,6 +32,10 @@
 	});
 </script>
 
+<svelte:head>
+    <title>First Ranking</title>
+</svelte:head>
+
 
 <div class="flex flex-col mb-3">
     <h1 class="text-2xl font-bold flex flex-row">Top 10 First people on stream</h1>
