@@ -29,5 +29,5 @@ background: url("data:image/svg+xml,%3Csvg width='798' height='600' viewBox='0 0
 }
 
 .link {
-    @apply hover:scale-105 transition-transform duration-100 ease-in-out font-semibold;
+    @apply hover:scale-[101%] transition-transform duration-100;
 }

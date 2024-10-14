@@ -10,6 +10,7 @@
     import vid from '$lib/images/vid.webm';
     import getTwitchLive from '$lib/scripts/twitch';
     import silly from '$lib/images/silly.png';
+    import mail from '$lib/images/mail.svg';
 
     twitchInfo();
     let stream: boolean = false;
@@ -85,4 +86,10 @@
         <a class="hover:text-[#9f52bc] cursor-pointer size-8 hover-container hover:scale-110 transition-all" href="https://throne.com/lucynavt" target="_blank">
             <img src={throne} alt="throne" class="size-10  fill-current" />
         </a>
+
+        <!-- svelte-ignore a11y_consider_explicit_label -->
+        <a class="hover:text-[#9f52bc] cursor-pointer size-8 hover-container hover:scale-110 transition-all" href="mailto:lucynavt@gmail.com" target="_blank">
+            <img src={mail} alt="mail" class="size-10 fill-current" />
+        </a>
+
     </div>
